@@ -1,0 +1,50 @@
+@import "../utilities/utilities.css";
+
+.nav {
+  display: flex;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 0rem;
+  margin: 0rem;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  padding: 0.5rem 1rem;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-header {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: var(--font-size-large);
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  flex-flow: row wrap;
+}
+.nav-left {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.nav-items {
+  padding: 0rem 0.5rem;
+}
+.nav-item-active {
+  font-weight: var(--font-weight-bold);
+}
+.nav-right {
+  padding-right: 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.nav-socials {
+  height: 1.4rem;
+  width: 1.4rem;
+  padding: 0rem 0.25rem;
+}

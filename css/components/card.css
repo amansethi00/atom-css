@@ -1,0 +1,108 @@
+@import "../utilities/utilities.css";
+
+.card-image {
+  width: 100%;
+  height: 100%;
+}
+.card-head {
+  padding-top: 0.8rem;
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-md);
+  margin-bottom: 0.5rem;
+}
+
+.card-body {
+  padding: 1rem;
+}
+.card {
+  position: relative;
+  border: 1px solid var(--light-gray);
+  border-radius: 0.5rem;
+}
+.card-badge {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+.card-badge-body {
+  display: flex;
+  flex-flow: column wrap;
+  padding-left: 2rem;
+  justify-content: flex-start;
+}
+.card-badge-head-lg {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+}
+.card-badge-head-md {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+}
+.card-badge-head-sm {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+}
+.card-badge-text-lg {
+  font-size: var(--font-size-md);
+}
+.card-badge-text-md {
+  font-size: var(--font-size-md);
+}
+.card-badge-text-sm {
+  font-size: var(--font-size-sm);
+}
+.card-title {
+  border-bottom: 1px solid black;
+  margin-bottom: 0.5rem;
+  font-size: var(--font-size-large);
+}
+.card-text-overlay {
+  position: absolute;
+  /* top: 2rem; */
+  top: 0px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.726);
+  /* font-weight: var(--font-weight-bold); */
+  background-color: var(rgb(255, 255, 255));
+  /* padding-top: 1rem; */
+  /* padding-bottom: 1rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+}
+/* .card:hover > .card-text-overlay {
+  display: block;
+} */
+
+.card-shadow-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-shadow-1:hover,
+.card-shadow-2:hover,
+.card-shadow-3:hover,
+.card-shadow-4:hover,
+.card-shadow-5:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-shadow-2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card-shadow-3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card-shadow-5 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-shadow-4 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
