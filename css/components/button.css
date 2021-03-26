@@ -77,10 +77,13 @@ button {
   font-size: var(--font-size-large);
   position: fixed;
   border-radius: 50pc;
-  height: 2rem;
+  height: auto;
   background-color: var(--orange);
   color: var(--white);
   border: 1px solid var(--orange);
+}
+.btn-floating:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 /* outline button style */
 .outline-none {
