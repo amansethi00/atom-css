@@ -37,6 +37,17 @@ button {
   text-decoration: none;
   color: var(--white);
 }
+.btn-secondary {
+  color: var(--primary-color);
+  font-size: var(--font-size-md);
+  /* padding: 0.5rem 1rem; */
+  border-radius: 1rem;
+  text-decoration: none;
+}
+a {
+  margin: 0rem;
+  padding: 0rem;
+}
 .btn-primary:hover,
 .btn-primary-lg:hover,
 .btn-primary-md:hover,
@@ -66,6 +77,7 @@ button {
   border-radius: 1rem;
   text-decoration: none;
 }
+.btn-secondary,
 .btn-secondary-lg:hover,
 .btn-secondary-md:hover,
 .btn-secondary-sm:hover {
