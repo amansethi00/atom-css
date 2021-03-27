@@ -63,7 +63,7 @@ body {
     display: none;
   }
   .code {
-    width: 45vh;
+    width: 20rem;
   }
   .row-responsive {
     flex-flow: column wrap;
