@@ -6,6 +6,11 @@
   font-family: var(--font-family);
   border: 2px solid var(--primary-color);
 }
+button {
+  cursor: pointer;
+  background: transparent;
+  font-family: var(--font-family);
+}
 /* primary button style */
 .btn-primary-lg {
   background-color: var(--primary-color);
