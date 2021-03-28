@@ -79,9 +79,15 @@ body {
 .docs-responsive {
   padding-left: 3rem;
 }
+.docs-responsive-2 {
+  padding-right: 3rem;
+}
 @media screen and (max-width: 1020px) {
   .docs-responsive {
     padding-left: 1rem;
+  }
+  .docs-responsive-2 {
+    padding-right: 1rem;
   }
   .container {
     display: flex;
