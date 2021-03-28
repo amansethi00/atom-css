@@ -399,6 +399,9 @@ body {
 .orange {
   color: var(--orange);
 }
+.black {
+  color: black;
+}
 /* circle */
 .text-center {
   text-align: center;
