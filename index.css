@@ -82,7 +82,32 @@ body {
 .docs-responsive-2 {
   padding-right: 6rem;
 }
+.landing-page-section {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+.landing-footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 @media screen and (max-width: 1020px) {
+  .xxlg {
+    font-size: var(--font-size-xlg);
+  }
+  .landing-page-section {
+    width: 70%;
+  }
   .docs-responsive {
     padding-left: 1rem;
   }

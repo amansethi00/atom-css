@@ -13,6 +13,7 @@
   --font-size-md: 16px;
   --font-size-large: 20px;
   --font-size-xlg: 32px;
+  --font-size-xxlg: 64px;
 
   /* font-weights var*/
   --font-weight-bold: 700;
@@ -66,6 +67,9 @@ body {
 }
 .xlg {
   font-size: var(--font-size-xlg);
+}
+.xxlg {
+  font-size: var(--font-size-xxlg);
 }
 
 /* font-weights */
@@ -403,6 +407,9 @@ body {
 }
 .black {
   color: black;
+}
+.primary {
+  color: var(--primary-color);
 }
 /* circle */
 .text-center {
