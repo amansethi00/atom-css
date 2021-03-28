@@ -10,6 +10,7 @@ button {
   cursor: pointer;
   background: transparent;
   font-family: var(--font-family);
+  border-width: 0px;
 }
 /* primary button style */
 .btn-primary-lg {
