@@ -1,6 +1,6 @@
 @import "../utilities/utilities.css";
 
-button {
+.btn {
   cursor: pointer;
   background: transparent;
   font-family: var(--font-family);
@@ -43,6 +43,7 @@ button {
   border-radius: 1rem;
   text-decoration: none;
 }
+
 a {
   margin: 0rem;
   padding: 0rem;

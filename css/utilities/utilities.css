@@ -285,7 +285,9 @@ body {
 .border-radius-half {
   border-radius: 0.5rem;
 }
-
+.border-0 {
+  border: 0px;
+}
 /* background */
 .bg-transparent {
   background: transparent;
