@@ -1,0 +1,27 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* importing all css here */
+@import "./utilities/utilities.css";
+@import "./components/nav.css";
+@import "./components/lists.css";
+@import "./components/button.css";
+@import "./components/badge.css";
+@import "./components/avatar.css";
+@import "./components/alert.css";
+@import "./components/card.css";
+@import "./components/input.css";
+@import "./components/modal.css";
+@import "./components/rating.css";
+@import "./components/toast.css";
+
+/* pre {
+  font-family: var(--font-family);
+  background-color: var(--light-gray);
+  padding-top: 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  
+} */

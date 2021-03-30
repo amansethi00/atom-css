@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atom Component Library</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="prism.css" />
+    <!-- <link rel="icon" type="image/svg+xml" href="./assets/molecule.svg"> -->
+    <link rel="alternate icon" href="/assets/molecule(1).ico">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8a01">
+  </head>
+  <body class="body">
+
+    <nav
+      class="nav docs-responsive"
+    >
+        <a href="./index.html" class="nav-left" style="text-decoration: none;color: black;">
+            <img src="./assets/molecule(1).svg" style="width: 3.8rem; height: 3rem" />
+            <span class="nav-items bold lg">Atom Css</span>
+        </a>      
+      <div class="nav-right docs-responsive-2" >
+        <a href="https://github.com/amansethi00/avikrit"><img src="./assets/github.svg" class="nav-socials"></a>
+        <a class="nav-socials"  href="https://twitter.com/amansethi00" ><img src="./assets/twitter.svg" class="nav-socials">  </a>
+      </div>
+      
+      </div>
+    </nav>
+    <div class="container ">
+      <sidebar class=" sidebar ">
+        <h2 class=" pd-left-1 ">Components</h2>
+
+        <div class="pd-1 sidebar-text">
+          <a href="#intro" class="btn-secondary-md black black">Intro</a>
+          <a href="#avatar" class="btn-secondary-md black">Avatar</a>
+          
+          <a href="#alert" class="btn-secondary-md black">Alert</a>
+          
+          <a href="#badge" class="btn-secondary-md black">Badge</a>
+          
+          <a href="#button" class="btn-secondary-md black">Button</a>
+            
+          <a href="#card" class="btn-secondary-md black">Card</a>
+          
+          <a href="#input" class="btn-secondary-md black">Input</a>
+          
+          <a href="#list" class="btn-secondary-md black">List</a>
+          
+          <a href="#modal" class="btn-secondary-md black">Modal</a>
+          
+          <a href="#navigation" class="btn-secondary-md black">Navigation</a>
+          
+          <a href="#rating" class="btn-secondary-md black">Rating</a>
+          
+          <a href="#toast" class="btn-secondary-md black">Toast</a>
+          
+          <a href="#grid" class="btn-secondary-md black">Grid</a>
+          
+          <a href="#text-utilities" class="btn-secondary-md black">Text Utilities</a>
+          
+          
+        </div>
+      
+      </sidebar>
+    <div class="main pd-top-2 ">
+      <div class="pd-1" id="intro">
+        <h3>Intro</h3>
+        Looking to quickly add Atom css to your project? Copy the following link tag in the html file and start using-
+      <div class="code">
+        <pre >
+          <code class="language-html">
+            &#x3C;link rel=&#x22;stylesheet&#x22;  href=&#x22;https://atomcss.netlify.app/index.css&#x22;/&#x3E;
+          </code>
+        </pre>
+      </div>
+      </div>
+      <div class="pd-1 " id="avatar">
+        <h3 >Avatar</h3>
+        <div class="row flex align-items-center">
+          <div class="pd-1"><img
+            src="./assets/ironman.png"
+            class="avatar-lg"
+          />
+          </div>
+          <div class="pd-1"><img
+            src="./assets/ironman.png"
+            class="avatar-md"
+          />
+          </div>
+          
+          <div class="pd-1">
+            <img
+            src="./assets/ironman.png"
+            class="avatar-sm"
+          />
+        </div>
+        </div>
+        <div class="code">
+          <pre>
+            <code class="language-html">
+              &#x3C;img src=&#x22;...&#x22; class=&#x22;avatar-lg&#x22; /&#x3E;
+            
+              &#x3C;img src=&#x22;...&#x22; class=&#x22;avatar-md&#x22; /&#x3E;
+                       
+              &#x3C;img src=&#x22;...&#x22; class=&#x22;avatar-sm&#x22; /&#x3E;
+                       
+            </code>
+          </pre>
+        </div>
+
+        
+        
+      </div>
+      <div class="pd-1 mg-bottom-1" id="alert">
+        <h3>Alert</h3>
+        <div class="alert-red mg-bottom-1">
+          <div class="alert-text">Danger alert</div>
+          <button class="outline-none pd-0">
+            <img class="alert-image" src="./assets/x-mark.svg">
+          </button>
+        </div>
+        <div class="alert-green mg-bottom-1">
+          <div class="alert-text">Green alert</div>
+          <button class="outline-none pd-0">
+            <img class="alert-image" src="./assets/x-mark.svg">
+          </button>        </div>        
+        <div class="alert mg-bottom-1">
+          <div class="alert-text">Some alert</div>
+          <button class="outline-none pd-0">
+            <img class="alert-image" src="./assets/x-mark.svg">
+          </button>        </div>
+        <div class="code">
+          <pre>
+            <code class="language-html">
+              &#x3C;div class=&#x22;alert-red &#x22;&#x3E;
+                &#x3C;div class=&#x22;alert-text&#x22;&#x3E;Danger alert&#x3C;/div&#x3E;
+                &#x3C;img class=&#x22;alert-image&#x22; src=&#x22;./assets/x-mark.svg&#x22;&#x3E;
+              &#x3C;/div&#x3E;
+
+              &#x3C;div class=&#x22;alert-green &#x22;&#x3E;
+                &#x3C;div class=&#x22;alert-text&#x22;&#x3E;Green alert&#x3C;/div&#x3E;
+                &#x3C;img class=&#x22;alert-image&#x22; src=&#x22;./assets/x-mark.svg&#x22;&#x3E;
+              &#x3C;/div&#x3E;
+
+              &#x3C;div class=&#x22;alert &#x22;&#x3E;
+              &#x3C;div class=&#x22;alert-text&#x22;&#x3E;Some alert&#x3C;/div&#x3E;
+              &#x3C;img class=&#x22;alert-image&#x22; src=&#x22;./assets/x-mark.svg&#x22;&#x3E;
+            &#x3C;/div&#x3E;
+            </code>
+          </pre>
+        </div>
+      </div>
+      <div class="pd-1 mg-bottom-1" id="badge" style="width: 20rem;">
+        <h3>Badge</h3>
+        <h4>badge on icons</h4>
+        <div class="flex row-reverse justify-content-space-between align-items-center">
+          <div class="badge-sm">
+            <img src="./assets/home.svg" class="badge-img-sm" />
+            <span class="badge-text-sm " >41</span>
+          </div>
+          <div class="badge-md">
+            <img src="./assets/home.svg" class="badge-img-md" />
+            <span class="badge-text-md">42</span>
+          </div>
+          <div class="badge-lg">
+            <img src="./assets/home.svg" class="badge-img-lg" />
+            <span class="badge-text-lg">42</span>
+          </div>
+        </div>
+        <div class="code">
+          <pre>
+            <code class="language-html">
+              &#x3C;div class=&#x22;badge&#x22;&#x3E;
+              &#x3C;img src=&#x22;./assets/home.svg&#x22; class=&#x22;badge-img-sm&#x22; /&#x3E;
+              &#x3C;span class=&#x22;badge-text-sm&#x22;&#x3E;42&#x3C;/span&#x3E;
+
+              &#x3C;div class=&#x22;badge&#x22;&#x3E;
+              &#x3C;img src=&#x22;./assets/home.svg&#x22; class=&#x22;badge-img-md&#x22; /&#x3E;
+              &#x3C;span class=&#x22;badge-text-md&#x22;&#x3E;42&#x3C;/span&#x3E;
+            &#x3C;/div&#x3E;
+
+            &#x3C;div class=&#x22;badge&#x22;&#x3E;
+              &#x3C;img src=&#x22;./assets/home.svg&#x22; class=&#x22;badge-img-lg&#x22; /&#x3E;
+              &#x3C;span class=&#x22;badge-text-lg&#x22;&#x3E;42&#x3C;/span&#x3E;
+            &#x3C;/div&#x3E;
+            </code>
+          </pre>
+        </div>
+        <h4>Badge on avatar</h4>
+          <div class="flex row-reverse align-items-center justify-content-space-between">
+            <div class="badge">
+            <img
+            src="./assets/ironman.png"
+            class="avatar-sm"
+            />
+            <span class="badge-avatar-text-sm ">41</span>
+            </div>
+        <div class="badge">
+          <img
+            src="./assets/ironman.png"
+            class="avatar-md"
+          />
+          <span class="badge-avatar-text-md">41</span>
+        </div>
+        <div class="badge">
+          <img
+            src="./assets/ironman.png"
+            class="avatar-lg"
+          />
+          <span class="badge-avatar-text-lg">41</span>
+        </div>
+      </div>
+      <div class="code">
+        <pre >
+          <code class="language-html">
+            &#x3C;div class=&#x22;badge&#x22;&#x3E;
+            &#x3C;img src="..." class=&#x22;avatar-lg&#x22;/&#x3E;
+            &#x3C;span class=&#x22;badge-avatar-text-lg&#x22;&#x3E;41&#x3C;/span&#x3E;
+          &#x3C;/div&#x3E;
+
+          &#x3C;div class=&#x22;badge&#x22;&#x3E;
+            &#x3C;img src="..." class=&#x22;avatar-md&#x22;/&#x3E;
+            &#x3C;span class=&#x22;badge-avatar-text-md&#x22;&#x3E;41&#x3C;/span&#x3E;
+          &#x3C;/div&#x3E;
+
+        &#x3C;div class=&#x22;badge&#x22;&#x3E;
+          &#x3C;img src="..." class=&#x22;avatar-sm&#x22;/&#x3E;
+          &#x3C;span class=&#x22;badge-avatar-text-sm &#x22;&#x3E;41&#x3C;/span&#x3E;
+        &#x3C;/div&#x3E;
+          </code>
+        </pre>
+      </div>
+      </div>
+      <div class="pd-1 mg-bottom-1" id="button">
+        <h3>Button</h3>
+        <div class="row-responsive" >
+          <button class=" btn btn-primary-lg">Primary Button</button>
+          <button class=" btn btn-primary-md mg-top-half mg-bottom-half">Primary Button</button>
+          <button class=" btn btn-primary-sm">Primary Button</button>
+        </div>        
+
+        <!-- <pre>          &#x3C;button class=&#x22; btn btn-primary-lg&#x22;&#x3E;Primary Button&#x3C;/button&#x3E;
+          &#x3C;button class=&#x22; btn btn-primary-md&#x22;&#x3E;Primary Button&#x3C;/button&#x3E;
+          &#x3C;button class=&#x22; btn btn-primary-sm&#x22;&#x3E;Primary Button&#x3C;/button&#x3E;
+        </pre> -->
+        <br/>
+        <br/>
+        <div class="code">
+          <pre>
+            <code class="language-html">
+              &#x3C;button class=&#x22; btn btn-primary-lg&#x22;&#x3E;Primary Button&#x3C;/button&#x3E;
+              &#x3C;button class=&#x22; btn btn-primary-md&#x22;&#x3E;Primary Button&#x3C;/button&#x3E;
+              &#x3C;button class=&#x22; btn btn-primary-sm&#x22;&#x3E;Primary Button&#x3C;/button&#x3E;    
+            </code>
+          </pre>
+        </div>
+        
+        <br/>
+        <div class="row-responsive ">
+          <button class=" btn btn-secondary-lg">secondary Button</button>
+          <button class=" btn btn-secondary-md mg-top-half mg-bottom-half">secondary Button</button>
+          <button class=" btn btn-secondary-sm">secondary Button</button>
+        </div>
+
+       
+        <br/>
+        <br/>
+        <div class="code">
+          <pre>
+            <code class="language-html">
+              &#x3C;button class=&#x22; btn btn-secondary-lg&#x22;&#x3E;secondary Button&#x3C;/button&#x3E;
+              &#x3C;button class=&#x22; btn btn-secondary-md&#x22;&#x3E;secondary Button&#x3C;/button&#x3E;
+              &#x3C;button class=&#x22; btn btn-secondary-sm&#x22;&#x3E;secondary Button&#x3C;/button&#x3E;
+            </code>
+          </pre>
+        </div>
+        
+        <br/>
+        <br/>
+        <br/>
+        <a href="..." class="btn-primary-md">Link Button</a>
+        <a href="..." class="btn-secondary-md">Link Button</a>
+        <br/>
+        <br/>
+        <div class="code">
+          <pre>
+            <code class="language-html">
+              &#x3C;a href=&#x22;&#x22; class=&#x22;btn-primary-md&#x22;&#x3E;Link Button&#x3C;/a&#x3E;
+              &#x3C;a href=&#x22;&#x22; class=&#x22;btn-secondary-md&#x22;&#x3E;Link Button&#x3C;/a&#x3E;
+            </code>
+          </pre>
+        </div>
+        <h4>Floating action button</h4>
+
+        <div class="relative flex row justify-content-center " style="width: 15rem;"> 
+          <button class="btn-floating relative" style="height: 2rem;width: 2rem;">+</button>
+        </div>
+        <br>
+        <div class="code">
+          <pre>
+            <code class="language-html">
+              &#x3C;button class=&#x22;btn-floating relative&#x22; style=&#x22;height: 2rem;width: 2rem;&#x22;&#x3E;+&#x3C;/button&#x3E;
+            </code>
+          </pre>
+        </div>
+
+      </div>
+      <div class="pd-1 mg-bottom-1" id="card">
+        <h3>Card</h3>
+        <div class="card" style="width:18rem">
+            <img class="card-image" src="./assets/ironman.png"
+          >
+          <div class="card-body">
+            <div class="card-head">Header</div>
+            <div class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis nisi obcaecati facilis consequuntur quae ea! Nulla, rem. Ea perferendis illo exercitationem doloremque vel enim? At praesentium vero ullam aspernatur dolorem?</div>
+            <button class="btn btn-primary-md mg-top-1">Go Somewhere</button>
+          </div>
+        </div>
+        <div class="code">
+          <pre>
+            <code class="language-html">
+              &#x3C;div class=&#x22;card&#x22; style=&#x22;width:18rem&#x22;&#x3E;
+              &#x3C;img class=&#x22;card-image&#x22; src="..." div class=&#x22;card-body&#x22;&#x3E;
+              &#x3C;div class=&#x22;card-head&#x22;&#x3E;Header&#x3C;/div&#x3E;
+              &#x3C;div class=&#x22;card-text&#x22;&#x3E;
+              Lorem ipsum...
+              &#x3C;/div&#x3E;
+              &#x3C;button class=&#x22;btn btn-primary-md mg-top-1&#x22;&#x3E;Go Somewhere&#x3C;/button&#x3E;
+              &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            </code>
+          </pre>
+        </div>
+        <br/>
+        <div class="card card-body" style="width: 15rem">
+          <div
+            class="card-badge"
+            style="max-width:700px"
+            >
+            <img
+              src="./assets/ironman.png"
+              class="avatar-lg"
+            />
+            <div class="card-badge-body"><div class="card-badge-head-lg">Name</div></div>
+            
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
+            vitae nemo maiores reprehenderit eaque, recusandae quaerat reiciendis
+            nihil, ut ducimus quidem officia maxime vero dolore facilis sequi
+            obcaecati porro provident?
+          </p>
+        </div>
+        <div class="code">
+          <pre>
+            <code class="language-html">
+              &#x3C;div class=&#x22;card card-body&#x22; style=&#x22;width: 15rem&#x22;&#x3E;
+              &#x3C;div
+              class=&#x22;card-badge-head-lg&#x22;
+              style=&#x22;width: 100%&#x22;
+              &#x3E;
+                &#x3C;img
+                src=&#x22;...&#x22; class=&#x22;avatar-lg&#x22;
+                /&#x3E;
+                &#x3C;div class=&#x22;card-badge-head&#x22;&#x3E;Name&#x3C;/div&#x3E;
+              &#x3C;/div&#x3E;
+              &#x3C;p&#x3E;
+              Lorem ipsum...
+              &#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            </code>
+          </pre>
+        </div>
+          <h4>cards with badges</h4>
+          <div class="card card-badge card-body" style="width: 15rem;">
+            <div class="badge">
+              <img src="./assets/ironman.png" class="avatar-lg"/>
+              <span class="badge-avatar-text-lg">41</span>
+            </div>
+            <div class="card-badge-body">
+              <div class="card-badge-head-lg">Hello</div>
+              <div class="card-badge-text-lg">Some message</div>
+            </div>
+          </div>
+          <div class="card card-badge card-body" style="width: 12rem;">
+            <div class="badge">
+              <img src="./assets/ironman.png" class="avatar-md"/>
+              <span class="badge-avatar-text-md">41</span>
+            </div>
+            <div class="card-badge-body">
+              <div class="card-badge-head-md">Hello</div>
+              <div class="card-badge-text-md">Some msg </div>
+            </div>
+           
+          </div>
+          <div class="card card-badge card-body" style="width: 8rem;">
+            <div class="badge">
+              <img src="./assets/ironman.png" class="avatar-sm"/>
+              <span class="badge-avatar-text-sm">41</span>
+            </div>
+            <div class="card-badge-body">
+              <div class="card-badge-head-sm">Hello</div>
+              <div class="card-badge-text-sm">Some msg </div>
+            </div>           
+          </div>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;card card-badge card-body&#x22; style=&#x22;width: 15rem;&#x22;&#x3E;
+                &#x3C;div class=&#x22;badge&#x22;&#x3E;
+                  &#x3C;img src=... class=&#x22;avatar-lg&#x22;/&#x3E;
+                  &#x3C;span class=&#x22;badge-avatar-text-lg&#x22;&#x3E;41&#x3C;/span&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;card-badge-body&#x22;&#x3E;
+                  &#x3C;div class=&#x22;card-badge-head-lg&#x22;&#x3E;Hello&#x3C;/div&#x3E;
+                  &#x3C;div class=&#x22;card-badge-text-lg&#x22;&#x3E;Some message&#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+              &#x3C;/div&#x3E;
+  
+              &#x3C;div class=&#x22;card card-badge card-body&#x22; style=&#x22;width: 12rem;&#x22;&#x3E;
+                &#x3C;div class=&#x22;badge&#x22;&#x3E;
+                  &#x3C;img src=... class=&#x22;avatar-md&#x22;/&#x3E;
+                  &#x3C;span class=&#x22;badge-avatar-text-md&#x22;&#x3E;41&#x3C;/span&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;card-badge-body&#x22;&#x3E;
+                  &#x3C;div class=&#x22;card-badge-head-md&#x22;&#x3E;Hello&#x3C;/div&#x3E;
+                  &#x3C;div class=&#x22;card-badge-text-md&#x22;&#x3E;Some msg &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+              &#x3C;/div&#x3E;
+  
+              &#x3C;div class=&#x22;card card-badge card-body&#x22; style=&#x22;width: 8rem;&#x22;&#x3E;
+                &#x3C;div class=&#x22;badge&#x22;&#x3E;
+                  &#x3C;img src=... class=&#x22;avatar-sm&#x22;/&#x3E;
+                  &#x3C;span class=&#x22;badge-avatar-text-sm&#x22;&#x3E;41&#x3C;/span&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;card-badge-body&#x22;&#x3E;
+                  &#x3C;div class=&#x22;card-badge-head-sm&#x22;&#x3E;Hello&#x3C;/div&#x3E;
+                  &#x3C;div class=&#x22;card-badge-text-sm&#x22;&#x3E;Some msg &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+              &#x3C;/div&#x3E;
+              </code>
+            </pre>
+          </div>
+
+          <h4>Cards with text overlay</h4>
+          <div class="card" style="width: 15rem;">
+            <img src="./assets/ironman.png" class="card-image">
+            <div class="card-text-overlay">
+              This is a text overlay card 
+            </div>
+          </div> 
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;card&#x22; style=&#x22;width: 15rem;&#x22;&#x3E;
+                &#x3C;img src=&#x22;...&#x22; class=&#x22;card-image&#x22;&#x3E;
+                &#x3C;div class=&#x22;card-text-overlay&#x22;&#x3E;
+                  This is a text overlay card 
+                &#x3C;/div&#x3E;
+              &#x3C;/div&#x3E; 
+              </code>
+            </pre>
+          </div>
+
+          <h4>Text only cards</h4>
+          <div class="card card-body" style="width: 15rem;">
+            <div class="card-head">
+              hello title
+            </div>
+            <div class="card-md-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quos nihil atque odio, praesentium inventore quidem enim aut dignissimos exercitationem velit beatae accusamus placeat aspernatur ipsum totam eius neque ipsam.
+            </div>
+          </div>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;card card-body&#x22; style=&#x22;width: 15rem;&#x22;&#x3E;
+                  &#x3C;div class=&#x22;card-head&#x22;&#x3E;
+                  hello title
+                  &#x3C;/div&#x3E;
+                  &#x3C;div class=&#x22;card-md-text&#x22;&#x3E;
+                    Lorem ipsum...
+                  &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+              </code>
+            </pre>
+          </div>
+
+
+          <h4>Horizontal card</h4>
+          <div class="card flex row" style="max-width: 20rem;">
+            <img src="./assets/ironman.png" class="card-image" style="width: 7.2rem;height: 100%;"
+            />
+            <div class="card-body" class="pd-half">
+              <div class="card-head pd-0">Header</div>
+              <div class="card-text">Lorem, ipsum ...</div>
+              <button class="btn btn-primary-sm mg-top-half">Go Somewhere</button>
+            </div>
+          </div>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;card flex row&#x22; style=&#x22;max-width: 20rem;&#x22;&#x3E;
+                &#x3C;img src=&#x22;./assets/ironman.png&#x22; class=&#x22;card-image&#x22; style=&#x22;width: 7.2rem;height: 100%;&#x22;
+                /&#x3E;
+                &#x3C;div class=&#x22;card-body&#x22; class=&#x22;pd-half&#x22;&#x3E;
+                  &#x3C;div class=&#x22;bold&#x22;&#x3E;Header&#x3C;/div&#x3E;
+                  &#x3C;div class=&#x22;card-text&#x22;&#x3E;Lorem, ipsum ...&#x3C;/div&#x3E;
+                  &#x3C;button class=&#x22;btn btn-primary-sm mg-top-half&#x22;&#x3E;Go Somewhere&#x3C;/button&#x3E;
+                &#x3C;/div&#x3E;
+              &#x3C;/div&#x3E;
+              </code>
+            </pre>
+          </div>
+
+          <h4>card with shadow</h4>
+          <div class="" style="max-width: 40rem;">
+            <div class="card card-body card-shadow-1" style="width: 15rem;">
+              <div class="card-head">
+              Card shadow 1 title
+              </div>
+              <div class="card-md-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quos nihil atque odio, praesentium inventore 
+                quidem enim aut dignissimos exercitationem velit beatae accusamus placeat aspernatur ipsum totam eius neque 
+                ipsam.
+              </div>
+            </div>
+            <div class="card card-body card-shadow-2" style="width: 15rem;">
+              <div class="card-head">
+                Card shadow 2 title
+              </div>
+              <div class="card-md-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quos nihil atque odio, praesentium inventore 
+                quidem enim aut dignissimos exercitationem velit beatae accusamus placeat aspernatur ipsum totam eius neque 
+                ipsam.
+              </div>
+            </div>
+            <div class="card card-body card-shadow-3" style="width: 15rem;">
+              <div class="card-head">
+                Card shadow 3 title
+              </div>
+              <div class="card-md-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quos nihil atque odio, praesentium i
+                nventore 
+                quidem enim aut dignissimos exercitationem velit beatae accusamus placeat aspernatur ipsum totam eius neque 
+                ipsam.
+              </div>
+            </div>
+            <div class="card card-body card-shadow-4" style="width: 15rem;">
+              <div class="card-head">
+                Card shadow 4 title
+              </div>
+              <div class="card-md-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quos nihil atque odio, praesentium i
+                nventore 
+                quidem enim aut dignissimos exercitationem velit beatae accusamus placeat aspernatur ipsum totam eius neque 
+                ipsam.
+              </div>
+            </div>
+            
+          </div>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;card card-body card-shadow-1&#x22; style=&#x22;width: 15rem;&#x22;&#x3E;
+                  &#x3C;div class=&#x22;card-head&#x22;&#x3E;
+                  Card shadow 1 title
+                  &#x3C;/div&#x3E;
+                  &#x3C;div class=&#x22;card-md-text&#x22;&#x3E;
+                    Lorem ipsum ...
+                  &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+
+                &#x3C;div class=&#x22;card card-body card-shadow-2&#x22; style=&#x22;width: 15rem;&#x22;&#x3E;
+                  &#x3C;div class=&#x22;card-head&#x22;&#x3E;
+                    Card shadow 2 title
+                  &#x3C;/div&#x3E;
+                  &#x3C;div class=&#x22;card-md-text&#x22;&#x3E;
+                    Lorem ipsum...
+                  &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+
+                &#x3C;div class=&#x22;card card-body card-shadow-3&#x22; style=&#x22;width: 15rem;&#x22;&#x3E;
+                  &#x3C;div class=&#x22;card-head&#x22;&#x3E;
+                    Card shadow 3 title
+                  &#x3C;/div&#x3E;
+                  &#x3C;div class=&#x22;card-md-text&#x22;&#x3E;
+                    Lorem ipsum...
+                  &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+
+                &#x3C;div class=&#x22;card card-body card-shadow-4&#x22; style=&#x22;width: 15rem;&#x22;&#x3E;
+                  &#x3C;div class=&#x22;card-head&#x22;&#x3E;
+                    Card shadow 4 title
+                  &#x3C;/div&#x3E;
+                  &#x3C;div class=&#x22;card-md-text&#x22;&#x3E;
+                    Lorem ipsum...
+                  &#x3C;/div&#x3E;
+                
+              </code>
+            </pre>
+          </div>
+        
+  
+      </div>
+        <div class="pd-1 mg-bottom-1" id="input">
+          <h3>Input</h3>
+          <div class="input-grp-sm">
+            <span class="input-grp-text" >Email</span>
+            <input class="input" placeholder="enter your email here"/>
+          </div>
+          <div class="input-grp-md">
+            <span class="input-grp-text">Email</span>
+            <input class="input"  placeholder="enter your email here"/>
+          </div>
+          <div class="input-grp-lg">
+            <span class="input-grp-text">Email</span>
+            <input class="input" placeholder="enter your email here"/>
+          </div>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;input-grp-sm&#x22;&#x3E;
+                &#x3C;span class=&#x22;input-grp-text&#x22; &#x3E;Email&#x3C;/span&#x3E;
+                &#x3C;input class=&#x22;input&#x22; placeholder=&#x22;enter your email here&#x22;/&#x3E;
+              &#x3C;/div&#x3E;
+
+              &#x3C;div class=&#x22;input-grp-md&#x22;&#x3E;
+                &#x3C;span class=&#x22;input-grp-text&#x22;&#x3E;Email&#x3C;/span&#x3E;
+                &#x3C;input class=&#x22;input&#x22;  placeholder=&#x22;enter your email here&#x22;/&#x3E;
+              &#x3C;/div&#x3E;
+
+              &#x3C;div class=&#x22;input-grp-lg&#x22;&#x3E;
+                &#x3C;span class=&#x22;input-grp-text&#x22;&#x3E;Email&#x3C;/span&#x3E;
+                &#x3C;input class=&#x22;input&#x22; placeholder=&#x22;enter your email here&#x22;/&#x3E;
+              &#x3C;/div&#x3E;
+              </code>
+            </pre>
+          </div>    
+        </div>
+        <div class="pd-1 mg-bottom-1" id="list">
+          <h3>List</h3>
+          <ul class="list-group">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+          </ul>        
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;ul class=&#x22;list-group&#x22;&#x3E;
+                &#x3C;li class=&#x22;list-group-item&#x22;&#x3E;An item&#x3C;/li&#x3E;
+                &#x3C;li class=&#x22;list-group-item&#x22;&#x3E;A second item&#x3C;/li&#x3E;
+                &#x3C;li class=&#x22;list-group-item&#x22;&#x3E;A third item&#x3C;/li&#x3E;
+                &#x3C;li class=&#x22;list-group-item&#x22;&#x3E;A fourth item&#x3C;/li&#x3E;
+                &#x3C;li class=&#x22;list-group-item&#x22;&#x3E;And a fifth one&#x3C;/li&#x3E;
+              &#x3C;/ul&#x3E;   
+              </code>
+            </pre>
+          </div>
+          
+          <h4>actionable list using anchor tag</h4>
+          <p>Just add an "actionable" class to the list item to make it look more resonsive</p>
+          <ul class="list-group">
+            <a href="..." class="list-group-item actionable">An item actionable</a>
+            <a href="..." class="list-group-item actionable">A second item actionable</a>
+            <a href="..." class="list-group-item actionable">A third item actionable</a>
+            <a href="..." class="list-group-item actionable">A fourth item actionable</a>
+            <a href="..." class="list-group-item actionable">And a fifth one actionable</a>
+          </ul>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;ul class=&#x22;list-group&#x22;&#x3E;
+            &#x3C;a href=&#x22;...&#x22; class=&#x22;list-group-item actionable&#x22;&#x3E;An item actionable&#x3C;/a&#x3E;
+            &#x3C;a href=&#x22;...&#x22; class=&#x22;list-group-item actionable&#x22;&#x3E;A second item actionable&#x3C;/a&#x3E;
+            &#x3C;a href=&#x22;...&#x22; class=&#x22;list-group-item actionable&#x22;&#x3E;A third item actionable&#x3C;/a&#x3E;
+            &#x3C;a href=&#x22;...&#x22; class=&#x22;list-group-item actionable&#x22;&#x3E;A fourth item actionable&#x3C;/a&#x3E;
+            &#x3C;a href=&#x22;...&#x22; class=&#x22;list-group-item actionable&#x22;&#x3E;And a fifth one actionable&#x3C;/a&#x3E;
+          &#x3C;/ul&#x3E;
+              </code>
+            </pre>
+          </div>
+
+
+          <h4>Normal list</h4>
+          <ul class="list-group-normal">
+            <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut explicabo, sed in corrupti veniam officiis quam obcaecati itaque architecto sit fuga optio impedit nulla atque omnis, quae dolor quas commodi?</li>
+            <li class="list-group-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque aut exercitationem sed ducimus nesciunt perferendis! Nesciunt beatae assumenda ipsam natus accusamus in, quis, ut, doloremque nam cupiditate porro ipsum odit?</li>
+            <li class="list-group-item">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique suscipit saepe, repellendus voluptas accusantium exercitationem ducimus possimus magnam praesentium, odit iste excepturi repellat maiores illo aut laborum, dolorum odio maxime.
+            </li>
+          </ul>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;ul class=&#x22;list-group-normal&#x22;&#x3E;
+                &#x3C;li class="list-group-item" &#x3E;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut explicabo, sed in corrupti veniam officiis quam obcaecati itaque architecto sit fuga optio impedit nulla atque omnis, quae dolor quas commodi?&#x3C;/li&#x3E;
+                &#x3C;li class="list-group-item"&#x3E;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque aut exercitationem sed ducimus nesciunt perferendis! Nesciunt beatae assumenda ipsam natus accusamus in, quis, ut, doloremque nam cupiditate porro ipsum odit?&#x3C;/li&#x3E;
+                &#x3C;li class="list-group-item"&#x3E;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique suscipit saepe, repellendus voluptas accusantium exercitationem ducimus possimus magnam praesentium, odit iste excepturi repellat maiores illo aut laborum, dolorum odio maxime.
+                &#x3C;/li&#x3E;
+              &#x3C;/ul&#x3E;
+              </code>
+            </pre>
+          </div>
+
+        </div>
+        <div class="mg-bottom-1 pd-1 " id="navigation">
+          <h3>Navigation</h3>
+          <nav class="nav relative" >
+            <div class="nav-left">
+              <div class="nav-items">
+                nav item 1
+              </div>
+              <div class="nav-items">
+                nav item 2
+              </div>
+            </div>
+            <div class="nav-right">
+              <img class="nav-socials" src="assets/github.svg">
+              </img>
+              <img class="nav-socials" src="assets/twitter.svg">  
+              </img>
+            </div>
+          </nav>
+
+          
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;nav class=&#x22;nav&#x22;&#x3E;
+                &#x3C;div class=&#x22;nav-left&#x22;&#x3E;
+                  &#x3C;div class=&#x22;nav-items&#x22;&#x3E;
+                    nav item 1
+                  &#x3C;/div&#x3E;
+                  &#x3C;div class=&#x22;nav-items&#x22;&#x3E;
+                    nav item 2
+                  &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;nav-right&#x22;&#x3E;
+                  &#x3C;img class=&#x22;nav-socials&#x22; src=&#x22;assets/github.svg&#x22;&#x3E;
+                  &#x3C;/img&#x3E;
+                  &#x3C;img class=&#x22;nav-socials&#x22; src=&#x22;assets/twitter.svg&#x22;&#x3E;  
+                  &#x3C;/img&#x3E;
+                &#x3C;/div&#x3E;
+              &#x3C;/nav&#x3E;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <div class="pd-1 mg-bottom-1" id="modal">
+          <h3>Modal</h3>
+          <div class="modal">
+            <div class="modal-container">
+              <div class="modal-head">
+                Modal Header
+              </div>
+              <div class="modal-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis qui, vero, molestias ipsa ea tempore quasi magnam dicta nulla error cumque, aut voluptatem magni laboriosam vitae necessitatibus facere soluta mollitia!
+              </div>
+              <div class="row flex ">
+                <button class="btn btn-primary-sm mg-right-half">Know More</button>
+                <button class="btn btn-secondary-sm">Close</button>
+              </div>
+
+            </div>
+          </div>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;modal&#x22;&#x3E;
+                &#x3C;div class=&#x22;modal-container&#x22;&#x3E;
+                  &#x3C;div class=&#x22;modal-head&#x22;&#x3E;
+                    Modal Header
+                  &#x3C;/div&#x3E;
+                  &#x3C;div class=&#x22;modal-body&#x22;&#x3E;
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis qui, vero, molestias ipsa ea tempore quasi magnam dicta nulla error cumque, aut voluptatem magni laboriosam vitae necessitatibus facere soluta mollitia!
+                  &#x3C;/div&#x3E;
+                  &#x3C;div class=&#x22;row flex &#x22;&#x3E;
+                    &#x3C;button class=&#x22;btn btn-primary-sm mg-right-half&#x22;&#x3E;Know More&#x3C;/button&#x3E;
+                    &#x3C;button class=&#x22;btn btn-secondary-sm&#x22;&#x3E;Close&#x3C;/button&#x3E;
+                  &#x3C;/div&#x3E;
+    
+                &#x3C;/div&#x3E;
+              &#x3C;/div&#x3E;
+              </code>
+            </pre>
+          </div>
+          
+      	
+        </div>
+        <div class="pd-1 mg-bottom-1" id="rating">
+          <h3>Rating for Ecommerce</h3>
+          <div class="card card-body">
+            <div class="rating-head">
+              <div class="rating-counter">5<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMiI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTYuNSA5LjQzOWwtMy42NzQgMi4yMy45NC00LjI2LTMuMjEtMi44ODMgNC4yNTQtLjQwNEw2LjUuMTEybDEuNjkgNC4wMSA0LjI1NC40MDQtMy4yMSAyLjg4Mi45NCA0LjI2eiIvPjwvc3ZnPg==" ></div>
+              <div class="rating-head-text">
+                Classy Product
+              </div>
+            </div>
+            
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt magnam voluptates, fuga repellendus tempora omnis saepe culpa, officia quasi quas debitis totam dolor reprehenderit quae. Minus natus voluptatem sed dolor!
+            </p>
+            <div class="rating-footer">
+                Atom Customer <svg width="14" height="14" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" class="pd-right-1"><g><circle cx="6" cy="6" r="6" fill="#878787"></circle><path stroke="#FFF" stroke-width="1.5" d="M3 6l2 2 4-4" fill="#878787"></path></g></svg>
+                Certified Buyer,Balotra, March 2021
+            </div>
+          </div>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;card card-body&#x22;&#x3E;
+            &#x3C;div class=&#x22;rating-head&#x22;&#x3E;
+              &#x3C;div class=&#x22;rating-counter&#x22;&#x3E;5&#x3C;img src=&#x22;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMiI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTYuNSA5LjQzOWwtMy42NzQgMi4yMy45NC00LjI2LTMuMjEtMi44ODMgNC4yNTQtLjQwNEw2LjUuMTEybDEuNjkgNC4wMSA0LjI1NC40MDQtMy4yMSAyLjg4Mi45NCA0LjI2eiIvPjwvc3ZnPg==&#x22; &#x3E;&#x3C;/div&#x3E;
+              &#x3C;div class=&#x22;rating-head-text&#x22;&#x3E;
+                Classy Product
+              &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;p&#x3E;
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt magnam voluptates, fuga repellendus tempora omnis saepe culpa, officia quasi quas debitis totam dolor reprehenderit quae. Minus natus voluptatem sed dolor!
+            &#x3C;/p&#x3E;
+            &#x3C;div class=&#x22;rating-footer&#x22;&#x3E;
+                Atom Customer &#x3C;svg width=&#x22;14&#x22; height=&#x22;14&#x22; viewBox=&#x22;0 0 12 12&#x22; xmlns=&#x22;http://www.w3.org/2000/svg&#x22; class=&#x22;pd-right-1&#x22;&#x3E;&#x3C;g&#x3E;&#x3C;circle cx=&#x22;6&#x22; cy=&#x22;6&#x22; r=&#x22;6&#x22; fill=&#x22;#878787&#x22;&#x3E;&#x3C;/circle&#x3E;&#x3C;path stroke=&#x22;#FFF&#x22; stroke-width=&#x22;1.5&#x22; d=&#x22;M3 6l2 2 4-4&#x22; fill=&#x22;#878787&#x22;&#x3E;&#x3C;/path&#x3E;&#x3C;/g&#x3E;&#x3C;/svg&#x3E;
+                Certified Buyer,Balotra, March 2021
+            &#x3C;/div&#x3E;
+          &#x3C;/div&#x3E;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <div class="pd-1 mg-bottom-1" id="grid">
+          <h3>Grid</h3>
+          <h4>2*1 grid</h4>
+          <div class="grid-row1-col2">
+            <div class="card card-body">
+              i am row 1 col 1
+            </div>
+            <div class="card card-body">
+              i am row 1 col 2
+            </div>
+          </div>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;grid-row1-col2&#x22;&#x3E;
+                &#x3C;div class=&#x22;card card-body&#x22;&#x3E;
+                  i am row 1 col 1
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;card card-body&#x22;&#x3E;
+                  i am row 1 col 2
+                &#x3C;/div&#x3E;
+              &#x3C;/div&#x3E;
+              </code>
+            </pre>
+          </div>
+          <h4>2*2 grid</h4>
+          <div class="grid-row2-col2">
+            <div class="card card-body">
+              i am row 1 col 1
+            </div>
+            <div class="card card-body">
+              i am row 1 col 2
+            </div>
+            <div class="card card-body">
+              i am row 2 col 1
+            </div>
+            <div class="card card-body">
+              i am row 2 col 2
+            </div>
+          </div>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;grid-row2-col2&#x22;&#x3E;
+                &#x3C;div class="card card-body"&#x3E;
+                  i am row 1 col 1
+                &#x3C;/div&#x3E;
+                &#x3C;div class="card card-body"&#x3E;
+                  i am row 1 col 2
+                &#x3C;/div&#x3E;
+                &#x3C;div class="card card-body"&#x3E;
+                  i am row 2 col 1
+                &#x3C;/div&#x3E;
+                &#x3C;div class="card card-body"&#x3E;
+                  i am row 2 col 2
+                &#x3C;/div&#x3E;
+              &#x3C;/div&#x3E;
+              </code>
+            </pre>
+          </div>
+
+        </div>
+        <div class="pd-1 mg-bottom-1" id="text-utilities">
+          <h3>Text Utilities</h3>
+          <h4>font size utilities</h4>
+          <div class="xsm">extra small text</div>
+          <div class="sm">I am small text</div>
+          <div class="md">I am medium text</div>
+          <div class="lg">I am large text</div>
+          <div class="xlg">I am extra large text</div>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;xsm&#x22;&#x3E;extra small text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;sm&#x22;&#x3E;I am small text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;md&#x22;&#x3E;I am medium text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;lg&#x22;&#x3E;I am large text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;xlg&#x22;&#x3E;I am extra large text&#x3C;/div&#x3E;
+              </code>
+            </pre>
+          </div>
+          <h4>font weight utilities</h4>
+          <div class="light">This is light text</div>
+          <div >This is normal text</div>
+          <div class="bold">This is bold text</div>
+          <div class="bolder">This is bolder text</div>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;light&#x22;&#x3E;This is light text&#x3C;/div&#x3E;
+                &#x3C;div &#x3E;This is normal text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;bold&#x22;&#x3E;This is bold text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;bolder&#x22;&#x3E;This is bolder text&#x3C;/div&#x3E;
+              </code>
+            </pre>
+          </div>
+          <h4>font color utilities</h4>
+          <div>This is black text</div>
+          <div class="gray">This is gray text</div>
+          <div class="blue">This is blue text</div>
+          <div class="orange">This is orange text</div>
+          <div class="green">This is green text</div>
+          <div class="yellow">This is yellow text</div>
+          <div class="red">This is red text</div>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;div&#x3E;This is black text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;gray&#x22;&#x3E;This is gray text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;blue&#x22;&#x3E;This is blue text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;orange&#x22;&#x3E;This is orange text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;green&#x22;&#x3E;This is green text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;yellow&#x22;&#x3E;This is yellow text&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;red&#x22;&#x3E;This is red text&#x3C;/div&#x3E;  
+              </code>
+            </pre>
+          </div>
+          <h4>Text align utilities</h4>
+          <div class="card card-body text-left">
+            This is left aligned text
+          </div>
+          <div class="card card-body text-center">
+            This is centered text
+          </div>
+          <div class="card card-body text-right">
+            This is right aligned text
+          </div>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;card card-body text-left&#x22;&#x3E;
+                  This is left aligned text
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;card card-body text-center&#x22;&#x3E;
+                  This is centered text
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;card card-body text-right&#x22;&#x3E;
+                  This is right aligned text
+                &#x3C;/div&#x3E;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <div class="pd-1 mg-bottom-1" id="toast">
+          <h3>Toast</h3>
+          <div class="toast-error mg-bottom-half">This is an error message <button class="outline-none">X </button></div>
+          <div class="toast-success mg-bottom-half">This is an success message <button class="outline-none">X </button></div>
+          <div class="toast-info">This is an success message <button class="outline-none">X </button></div>
+          <div class="code">
+            <pre>
+              <code class="language-html">
+                &#x3C;div class=&#x22;toast-error&#x22;&#x3E;
+                  This is an error message 
+                  &#x3C;button class=&#x22;outline-none&#x22;&#x3E;X &#x3C;/button&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;toast-success&#x22;&#x3E;
+                  This is an success message 
+                  &#x3C;button class=&#x22;outline-none&#x22;&#x3E;X &#x3C;/button&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;toast-info&#x22;&#x3E;
+                  This is an info message
+                  &#x3C;button class=&#x22;outline-none&#x22;&#x3E;X &#x3C;/button&#x3E;
+                &#x3C;/div&#x3E;
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./prism.js"></script>
+  </body>
+</html>
